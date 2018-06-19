@@ -15,17 +15,17 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         return user
 
 
-class MovieSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Movie
-        fields = ('id', 'title', 'description', 'avg_rating', 'no_of_ratings')
-
-
-class RatingSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Rating
-        fields = ('stars', 'user', 'movie',)
+# class MovieSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Movie
+#         fields = ('id', 'title', 'description', 'avg_rating', 'no_of_ratings')
+#
+#
+# class RatingSerializer(serializers.ModelSerializer):
+#
+#     class Meta:
+#         model = Rating
+#         fields = ('stars', 'user', 'movie',)
 
 
 #kraya

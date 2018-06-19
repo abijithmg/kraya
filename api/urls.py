@@ -5,8 +5,8 @@ from api.views import CustomObtainAuthToken
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
-router.register(r'movies', views.MovieViewSet)
-router.register(r'ratings', views.RatingViewSet)
+# router.register(r'movies', views.MovieViewSet)
+# router.register(r'ratings', views.RatingViewSet)
 router.register(r'items', views.ItemViewSet)
 router.register(r'preferences', views.PreferenceViewSet)
 router.register(r'suppliers', views.SupplierViewSet)
