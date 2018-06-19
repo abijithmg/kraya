@@ -5,5 +5,14 @@ from django.views.generic import TemplateView
 
 
 class Index(TemplateView):
-    template_name = 'index.html'
+    template_name = "index.html"
 
+
+def product(request):
+    import pdb
+    pdb.set_trace()
+    if request.method == "POST":
+        pass
+    template_name = "product.html"
+    context = {}
+    return render(request, template_name, context)

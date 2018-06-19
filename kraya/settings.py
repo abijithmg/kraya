@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'web',
     'api',
     'corsheaders',
+    # 'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 CORS_ORIGIN_WHITELIST = (
@@ -146,3 +148,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "web.static"),
 ]
+
+INTERNAL_IPS = ('127.0.0.1',)
